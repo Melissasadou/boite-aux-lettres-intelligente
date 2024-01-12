@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deuxième Page - Smart Mail</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Crete+Round:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <h1>Smart Mail<span class="orange">.</span></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html"> Accueil </a></li>
+                    <li><a href="connexion.php"> Se connecter </a></li>
+                    <li><a href="inscription.html"> S'inscrire </a></li>
+                    <li><a href="index.html#contact"> Contact </a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container3">
+        <div class="signin-box">
+            <h1>Informations Additionnelles</h1>
+            <form action="index.html" method="post">
+                <div class="half-width">
+                    <label for="num_appartement">Numéro d'Appartement</label>
+                    <input type="text" id="num_appartement" name="num_appartement">
+                </div>
+                <div class="half-width">
+                    <label for="rue">Rue</label>
+                    <input type="text" id="rue" name="rue" required>
+                </div>
+                <div class="half-width">
+                    <label for="ville">Ville</label>
+                    <select id="ville" name="ville" required>
+                        <option value="" disabled selected>Sélectionnez la ville</option>
+                        <option>Cergy</option>
+                        <option>Paris</option>
+                        <option>Alger</option>
+                    </select>
+                </div>
+                <div class="half-width">
+                    <label for="code_postal">Code Postal</label>
+                    <select id="code_postal" name="code_postal" required>
+                        <option value="" disabled selected>Sélectionnez le code postal</option>
+                        <option>95000</option>
+                        <option>75000</option>
+                        <option>16000</option>
+                    </select>
+                </div>
+                <div class="half-width">
+                    <label for="pays">Pays</label>
+                    <select id="pays" name="pays" required>
+                        <option value="" disabled selected>Sélectionnez le pays</option>
+                        <option>France</option>
+                        <option>Algérie</option>
+                    </select>
+                </div>
+                
+                <div class="half-width">
+                    <label for="statut_boite">Statut de la Boîte aux Lettres</label>
+                    <select id="statut_boite" name="statut_boite">
+                        <option value="" disabled selected>Sélectionnez le Statut</option>
+                        <option value="fonctionne">Fonctionne</option>
+                        <option value="non_fonctionne">Non Fonctionne</option>
+                    </select>
+                </div>
+                <div class="half-width">
+                    <label for="type_capteur">Type de Capteur</label>
+                    <select id="type_capteur" name="type_capteur">
+                        <option value="" disabled selected>Sélectionnez le type</option>
+                        <option value="mouvement">Mouvement</option>
+                        <option value="lecture">Lecture</option>
+                    </select>
+                </div>
+                <div class="half-width">
+                    <label for="etat_capteur">État du Capteur</label>
+                    <select id="etat_capteur" name="etat_capteur">
+                        <option value="" disabled selected>Sélectionnez l'état</option>
+                        <option value="actif">Actif</option>
+                        <option value="inactif">Inactif</option>
+                    </select>
+                </div>
+                <div class="half-width">
+                    <label for="date_depot_capteur">Date de Dépôt du Capteur</label>
+                    <input type="date" id="date_depot_capteur" name="date_depot_capteur">
+                </div>
+                <button type="submit">Enregistrer</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
